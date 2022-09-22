@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.to_do_application">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/reminder"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/reminder"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.To_do_app">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DeleteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InsertActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HelpActivity"
+            android:exported="true" />
+
+        <activity android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
